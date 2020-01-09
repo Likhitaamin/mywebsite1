@@ -1,22 +1,25 @@
 *{
     margin:0px;
     padding:0px;
+    z-index: 5;
+    overflow: hidden;
 }
+
 .bgimage{
-    background-image: url('pictures/pexels.jpeg');
+    background-image: url('./tt.jpg');
     background-size: 100% 100%;
     width:100%;
     height:100vh;
-
+ 
 }
 .menu{
     width:100%;
-    height:150px;
+    height:90px;
     background-color: rgba(0,0,0,0.5);
 }
 .leftmenu{
-    width:25%;
-    line-height:80px;
+    width: 25%;
+    line-height:100px;
     float:left;
 }
 .leftmenu h4{
@@ -45,13 +48,15 @@ font-weight:bold;
 line-height:100px;
 margin-left:40px;
 text-transform:uppercase;
+transition: 0.8s;
 
 }
 #firstlist{
-    color:orange;
+    color:orange;  
 }
 .rightmenu ul li:hover{
-    color:orange;
+    color:orange; transition: 0.8s;
+    transform: scale(1.3);
 }
 .text{
     width: 100%;
@@ -62,21 +67,37 @@ text-transform:uppercase;
 }
 .text h4{
     font-size:14px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif; transition: 1s;
+}
+.text h4:hover{
+    color: whitesmoke;
+    transform: scale(1.2); transition: 1s;
 }
 .text h1{
     font-size:60px;
     font-family:'Times New Roman', Times, serif;
     font-weight:700px;
     margin:14px 0px;
+    color: whitesmoke; transition: 1s;
 }
 .text h3{
+    transition: 1s;
     font-size:12px;
     font-family:'Times New Roman', Times, serif;
 
 }
+.text h1:hover{
+    transition: 1s;
+    background: orange;
+    transform: scale(1.2);
+}
+.text h3:hover{
+    transition: 1s;
+    color: whitesmoke;
+    transform: scale(1.2);
+}
 #buttonone{
-    background-color:skyblue;
+    background-color: whitesmoke;
     border:none;
     font-size:12px;
     font-weight:bold;
@@ -86,6 +107,12 @@ text-transform:uppercase;
     font-family:'Times New Roman', Times, serif;
     margin-top:25px;
     border:3px solid black;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s;
+}
+.text button{
+    margin: 0 10px 3px 10px;
 }
 
 #buttontwo{
@@ -94,8 +121,32 @@ text-transform:uppercase;
     font-family:'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: :40px;
-    border:3px  solid black;
+    line-height: 40px;
+    border: 3px  solid black;
     height:45px;
     width:150px;
+    cursor: pointer;
+    animation: button;
+    transition: 1s;
+}
+
+
+#buttonone:hover,#buttontwo:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    background: orange;
+}
+ul{
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+footer{
+    font-family:  'Raleway', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 120px;
+    font-weight: 700; transition: 1s;
+}
+footer:hover{
+    color: whitesmoke; transition: 1s;
 }
